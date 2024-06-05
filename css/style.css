@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: lemonchiffon;
+    font-family: "Nunito", sans-serif;
+}
+
+#titolo {
+    color: darkmagenta;
+    text-shadow: 4px 4px lightsteelblue;
+}
+
+span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lavender;
+    width: 25rem;
+    height: 2rem;
+    border-radius: 15px;
+    margin: 5px 0;
+}
+
+#backrisultato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: lightcoral;
+    width: 25rem;
+    height: 4rem;
+    border-radius: 15px;
+    margin: 10px 0;
+}
+
+#prisultato {
+    display: flex;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-style: none;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 5px lightseagreen;
+}
+
+#risultato {
+    font-size: 15px;
+    margin: 0 5px;
+}
