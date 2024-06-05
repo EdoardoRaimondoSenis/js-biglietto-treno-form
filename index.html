@@ -7,11 +7,56 @@
 </head>
 <body>
     <h1 id="titolo">Calcola il prezzo del tuo biglietto</h1>
-    <span> (> 65 anni c'è uno sconticino del 40%)</span> <br>
-    <span> (< 18 anni c'è uno sconticino del 20%)</span>
-    <div id="backrisultato">
-        <div id="prisultato">
-            Il biglietto costa: <h2 id="risultato">"Prezzo biglietto"</h2>
+    <span class="sconto"> (> 65 anni c'è uno sconticino del 40%)</span> <br>
+    <span class="sconto"> (< 18 anni c'è uno sconticino del 20%)</span>
+    <div class="backrisultato">
+        <div>
+            <div class="credbiglietto">
+                <span>Nome Cognome</span>
+                <input id="nomecogn" type="text">
+            </div>
+            <div class="credbiglietto">
+                <span>Km da percorrere</span>
+                <input id="km" type="text">
+            </div>
+            <div class="credbiglietto">
+                <span>Fascia d'età</span>
+                <select id="fascia">
+                    <option id="minorenne" value="Minorenne">Minorenne</option>
+                    <option id="maggiorenne" value="Maggiorenne">Maggiorenne</option>
+                    <option id="over" value="Over 65">Over 65</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <button id="genera">Genera</button>
+        </div>
+    </div>
+    
+    <div class="contrisultato">
+        <div class="backrisultato bigl">
+            <div class="prisultato passeggero">
+                <span>Nome Passeggero</span>
+                <span id="nomepass">"Nome passeggero"</span>
+            </div>
+            <div class="prisultato">
+                <div class="cellarisul">
+                    <span>Offerta</span>
+                    <h2 id="">Biglietto standard</h2>
+                </div>
+                <div class="cellarisul">
+                    <span>Carrozza</span>
+                    <h2 id="carrozza">"Numero carrozza"</h2>
+                </div>
+                <div class="cellarisul">
+                    <span>Il biglietto costa</span>
+                    <h2 id="codicecp">"Codice cp"</h2>
+                </div>
+                <div class="cellarisul">
+                    <span>Costo biglietto</span>
+                    <h2 id="risultato">"Prezzo biglietto"</h2>
+                </div>
+            </div>
         </div>
     </div>
 </body>

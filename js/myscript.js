@@ -1,3 +1,6 @@
+const nomecogn = document.getElementById("nomecogn")
+
+
 let km = prompt("Inserire chilometri da percorrere");
 let anni = parseInt(prompt("Inserire l'età"));
 let prezzobiglietto
@@ -9,4 +12,6 @@ if (anni <= 18) {
 } else {
     prezzobiglietto = km * 0.21;
 }
+
+
 

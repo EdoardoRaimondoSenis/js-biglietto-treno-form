@@ -13,7 +13,7 @@ body {
     text-shadow: 4px 4px lightsteelblue;
 }
 
-span {
+.sconto {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,29 +24,87 @@ span {
     margin: 5px 0;
 }
 
-#backrisultato {
+.contrisultato {
+    background-color: lightcoral;
+    border-radius: 15px;
+}
+
+.backrisultato {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     padding: 10px;
     background-color: lightcoral;
-    width: 25rem;
-    height: 4rem;
+    width: 70rem;
+    height: 10rem;
     border-radius: 15px;
     margin: 10px 0;
 }
 
-#prisultato {
+.backrisultato div {
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#genera {
+    margin-top: 1rem;
     padding: 10px 20px;
-    margin: 10px 0;
+    box-shadow: 5px 5px lightseagreen;
+}
+
+.credbiglietto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 2rem;
+    padding: 10px 20px;
+    width: 200px;
     border-style: none;
     border-radius: 10px;
     background-color: white;
     box-shadow: 5px 5px lightseagreen;
 }
 
-#risultato {
-    font-size: 15px;
-    margin: 0 5px;
+.credbiglietto span {
+    margin-bottom: 10px;
+}
+
+.prisultato {
+    display: flex;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-style: none;
+    height: 10rem;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 5px lightseagreen;
+}
+
+.cellarisul {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    height: 10rem;
+}
+
+.cellarisul span {
+    margin-bottom: 3rem;
+}
+
+.bigl {
+    flex-direction: row;
+}
+
+.passeggero {
+    background-color: lightblue;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: 1rem;
+}
+
+.passeggero span {
+    padding-bottom: 1rem;
 }
