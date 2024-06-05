@@ -48,6 +48,12 @@ body {
     justify-content: center;
 }
 
+.backrisultato div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .genera {
     margin-top: 1rem;
     padding: 10px 20px;
