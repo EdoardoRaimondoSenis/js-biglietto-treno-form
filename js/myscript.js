@@ -1,17 +1,42 @@
-const nomecogn = document.getElementById("nomecogn")
 
+// prende input nome e cognome
+const nomecogn = document.querySelector(".nomecogn");
 
-let km = prompt("Inserire chilometri da percorrere");
-let anni = parseInt(prompt("Inserire l'età"));
+// pulsante per generare il risultato
+const button = document.querySelector(".genera");
+
 let prezzobiglietto
+let km = document.querySelector(".km");
 
-if (anni <= 18) {
-    prezzobiglietto = (km * 0.21) - ((km * 0.21) * 20 / 100);
-} else if (anni >= 65) {
-    prezzobiglietto = (km * 0.21) - ((km * 0.21) * 40 / 100);
-} else {
-    prezzobiglietto = km * 0.21;
-}
+const fascia = document.querySelector(".fascia");
+
+button.addEventListener("click",
+    function () {
+        let inputkm = km.value;
+        console.log(inputkm);
+
+        let inputfascia = fascia.value;
+        console.log(inputfascia);
+
+        
+        // calcolo costo biglietto in base all'età
+        if (inputfascia = String("Minorenne")) {
+            prezzobiglietto = (inputkm * 0.21) - ((inputkm * 0.21) * 20 / 100);
+        } else if (inputfascia = String("Over 65")) {
+            prezzobiglietto = (inputkm * 0.21) - ((inputkm * 0.21) * 40 / 100);
+        } else if (inputfascia = String("Maggiorenne")) {
+            prezzobiglietto = inputkm * 0.21;
+        }
+        
+        let inputnomecogn = nomecogn.value;
+        let inputprezzobiglietto = prezzobiglietto.value;
+        console.log(inputnomecogn);
+        console.log(inputprezzobiglietto);
+        
+       
+        
+    }
+);
 
 
 

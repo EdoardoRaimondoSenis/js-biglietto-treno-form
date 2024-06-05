@@ -42,13 +42,13 @@ body {
     margin: 10px 0;
 }
 
-.backrisultato div {
+.backrisultato form {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#genera {
+.genera {
     margin-top: 1rem;
     padding: 10px 20px;
     box-shadow: 5px 5px lightseagreen;
